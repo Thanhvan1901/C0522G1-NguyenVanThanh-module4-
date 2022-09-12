@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f9979b10-111b-4d82-ba66-5ae9964ef561" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../.idea/CODEGYM.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai_tap_them/Bai_tap_them.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai_tap_them/hoa_don_tien_dien/Controller_hoa_don/MenuChinh.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai_tap_them/hoa_don_tien_dien/Controller_hoa_don/ThemMoi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai_tap_them/hoa_don_tien_dien/Data/khachHang.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai_tap_them/hoa_don_tien_dien/Model_hoa_don_dien/HoaDon/HoaDon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai_tap_them/hoa_don_tien_dien/Model_hoa_don_dien/Khach_hang/KhachHang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai_tap_them/hoa_don_tien_dien/Model_hoa_don_dien/Khach_hang/KhachHangNuocNgoai.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai_tap_them/hoa_don_tien_dien/Model_hoa_don_dien/Khach_hang/KhachHangVietNam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai_tap_them/hoa_don_tien_dien/Service_hoa_don_tien_dien/Impl/Hoa_Don/HoaDon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai_tap_them/hoa_don_tien_dien/Service_hoa_don_tien_dien/Impl/Khach_Hang/KhachHangNuocNgoaiService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai_tap_them/hoa_don_tien_dien/Service_hoa_don_tien_dien/Impl/Khach_Hang/KhachHangVietNamService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai_tap_them/hoa_don_tien_dien/Service_hoa_don_tien_dien/Interface/IHoaDon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai_tap_them/hoa_don_tien_dien/Service_hoa_don_tien_dien/Interface/IKhachHang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai_tap_them/hoa_don_tien_dien/Until/ReadAndWriteFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai_tap_them/hoa_don_tien_dien/Until/Regex/Regex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai_tap_them/hoa_don_tien_dien/Until/Thong_tin_khach_hang/DinhMuc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai_tap_them/hoa_don_tien_dien/Until/Thong_tin_khach_hang/LoaiKhachHang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai_tap_them/hoa_don_tien_dien/Until/Thong_tin_khach_hang/MaKhachHang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai_tap_them/hoa_don_tien_dien/Until/Thong_tin_khach_hang/QuocTich.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai_tap_them/hoa_don_tien_dien/Until/Thong_tin_khach_hang/TenKhachHang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai_tap_them/hoa_don_tien_dien/View/DisplayHoaDon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai_tap_them/hoa_don_tien_dien/hoa_don_tien_dien.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai_tap_them/src/Exam/Controller/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai_tap_them/src/Exam/Data/Data.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai_tap_them/src/Exam/Model/Hocvien.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai_tap_them/src/Exam/Model/NhanSu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai_tap_them/src/Exam/Model/NhanVien.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai_tap_them/src/Exam/Service/IService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai_tap_them/src/Exam/Service/NhanSuImpl/NhanSuServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai_tap_them/src/Exam/Until/CheckExam/CheckExam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai_tap_them/src/Exam/Until/CheckExam/ID.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai_tap_them/src/Exam/Until/ReadAndWrite/ReadAndWrite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai_tap_them/src/Exam/Until/RegexExam/RegexExam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai_tap_them/src/Exam/View/View.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../demo_tomcat/src/main/java/ThucHanhServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../thimodule2/thimodule2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../thimodule2/thimodule2/thimodule2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module1" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module1" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="thuc_hanh" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jsp File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectId" id="2EViBIh60X35VDYx9j5MhZRbYVO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/view" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\CODEGYM\Module4\ss1\thuc_hanh\src\main\webapp\view" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\CODEGYM\Module4\ss1\thuc_hanh\src\main\webapp\WEB-INF" />
+      <recent name="D:\CODEGYM\Module4\ss1\thuc_hanh\src\main\webapp\WEB-INF\view" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.65" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.65" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="Gradle : org.example : thuc_hanh-1.0-SNAPSHOT.war">
+          <settings>
+            <option name="CONTEXT_PATH" value="" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="7d5563d4-9440-4afc-9c03-c9a5b350b589" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="61245" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Gradle : org.example : thuc_hanh-1.0-SNAPSHOT.war" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f9979b10-111b-4d82-ba66-5ae9964ef561" name="Changes" comment="" />
+      <created>1662687018383</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1662687018383</updated>
+      <workItem from="1662687019676" duration="2733000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
