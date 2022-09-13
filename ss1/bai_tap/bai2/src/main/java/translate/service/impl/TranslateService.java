@@ -21,8 +21,6 @@ public class TranslateService implements ITranslateService {
         dictionaryMap.put(4, new Translate("computer", "Máy Tính"));
         dictionaryMap.put(5, new Translate("mouse", "Con Chuột"));
         dictionaryMap.put(6, new Translate("phone", "Điện Thoại"));
-
-
     }
 
     @Override
