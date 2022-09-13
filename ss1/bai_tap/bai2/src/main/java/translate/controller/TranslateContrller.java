@@ -14,15 +14,29 @@ import javax.xml.ws.Service;
 import java.util.List;
 
 @Controller
+
 public class TranslateContrller {
+
     @Autowired
-    private ITranslateService iTranslateService ;
-    @GetMapping("")
-    public String index(){
-        return "index" ;
+    private ITranslateService iTranslateService;
+
+    @GetMapping("/")
+    public String seach() {
+        return "index";
     }
-    @PostMapping("/result")
-    public ModelAndView result(@RequestParam String english, String vietnam){
-        return new ModelAndView("/result","result",iTranslateService.findByWord(english, vietnam));
+
+    @PostMapping("/search")
+    public String meaing(@RequestParam String keyword, Model model) {
+        List<Translate> dictionaryLanguages = iTranslateService.findAll();
+        for (int i = 0; i < dictionaryLanguages.size(); i++) {
+            if (keyword.equalsIgnoreCase(dictionaryLanguages.get(i).getEnglish())) {
+                model.addAttribute("word", dictionaryLanguages.get(i).getVietNamese());
+                model.addAttribute("key", keyword);
+                break;
+            } else {
+                model.addAttribute("word", "Not Found !");
+            }
+        }
+        return "/index";
     }
 }

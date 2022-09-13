@@ -1,15 +1,16 @@
 package translate.model;
 
 public class Translate {
-    private String english ;
-    private String vietNam ;
+    private String english;
+    private String vietNamese;
 
     public Translate() {
     }
 
-    public Translate(String english, String vietNam) {
+    public Translate(String english, String vietNamese) {
+
         this.english = english;
-        this.vietNam = vietNam;
+        this.vietNamese = vietNamese;
     }
 
     public String getEnglish() {
@@ -20,11 +21,11 @@ public class Translate {
         this.english = english;
     }
 
-    public String getVietNam() {
-        return vietNam;
+    public String getVietNamese() {
+        return vietNamese;
     }
 
-    public void setVietNam(String vietNam) {
-        this.vietNam = vietNam;
+    public void setVietNamese(String vietNamese) {
+        this.vietNamese = vietNamese;
     }
 }

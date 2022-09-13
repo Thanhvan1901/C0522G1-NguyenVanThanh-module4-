@@ -10,26 +10,23 @@ import java.util.List;
 import java.util.Map;
 
 @Service
+
 public class TranslateService implements ITranslateService {
-    private static List<Translate> translateList ;
+    private static Map<Integer, Translate> dictionaryMap = new HashMap<>();
+
     static {
-        translateList = new ArrayList<>();
-        translateList.add(new Translate("Hello", "Xin Chào"));
-        translateList.add(new Translate("Birthday", "Sinh Nhật"));
-        translateList.add(new Translate("Address", "Địa Chỉ"));
-        translateList.add(new Translate("Computer", "Máy Tính"));
-        translateList.add(new Translate("Car", "Ô tô"));
+        dictionaryMap.put(1, new Translate("hello", "Xin Chào"));
+        dictionaryMap.put(2, new Translate("one", "Một"));
+        dictionaryMap.put(3, new Translate("birthday", "Sinh Nhật "));
+        dictionaryMap.put(4, new Translate("computer", "Máy Tính"));
+        dictionaryMap.put(5, new Translate("mouse", "Con Chuột"));
+        dictionaryMap.put(6, new Translate("phone", "Điện Thoại"));
+
+
     }
+
     @Override
-    public List<Translate> findByWord(String english, String vietNam) {
-        List<Translate> words = new ArrayList<>();
-        if (english.equals("vie")) {
-            for (Translate translate : translateList) {
-                if (translate.getVietNam().toLowerCase().contains(english)) {
-                    words.add(translate);
-                }
-            }
-        }
-        return words;
+    public List<Translate> findAll() {
+        return new ArrayList<>(dictionaryMap.values());
     }
 }
