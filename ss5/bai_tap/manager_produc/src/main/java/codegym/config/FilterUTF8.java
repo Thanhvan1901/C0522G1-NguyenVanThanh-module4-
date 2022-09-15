@@ -1,4 +1,4 @@
-package com.codegym.config;
+package codegym.config;
 
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
