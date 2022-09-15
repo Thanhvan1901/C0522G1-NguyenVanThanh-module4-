@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout :: head">
+<body>
+<h3>EDIT PRODUCT</h3>
+<p>
+    <a th:href="@{/music}">
+        Back To Product List
+    </a>
+</p>
+<div id="form">
+    <form action="#" th:action="@{/music/update}" th:object="${music}"
+          method="post" novalidate="novalidate">
+        <input type="text" th:field="*{id}">
+        <div>
+            <label>Name</label>
+            <input type="text" th:field="*{musicName}">
+        </div>
+        <div>
+            <label>Price</label>
+            <input type="text" th:field="*{singerName}">
+        </div>
+        <div>
+            <label>Description</label>
+            <input type="text" th:field="*{KindOfMusic}">
+        </div>
+        <div>
+            <label>Producer</label>
+            <input type="text" th:field="*{music}">
+        </div>
+        <input type="submit" value="Save">
+    </form>
+</div>
+</body>
+</html>

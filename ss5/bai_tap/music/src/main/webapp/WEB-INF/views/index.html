@@ -1,0 +1,50 @@
+<%@ page contentType="text/html; charset=UTF-8" %>
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout :: head">
+</head>
+<body>
+<h3>Product Manager</h3>
+<div class="notify">
+    <div th:if="${success}">
+        <span th:text="${success}"></span>
+    </div>
+</div>
+<p>
+    <a th:href="@{music/create}">
+        Add New Product
+    </a>
+</p>
+
+<h2 th:if="${musicList.isEmpty()}" style="color: red">
+    No Product List</h2>
+<table id="customers" th:unless="${musicList.isEmpty()}">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Music Name </th>
+        <th>Singer</th>
+        <th>Kind Of Music</th>
+        <th>Music</th>
+        <th> Listen to music </th>
+        <th>Edit</th>
+        <th>Delete</th>
+        <th>View</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="music : ${musicList}">
+        <td th:text="${music.id}"></td>
+        <td th:text="${music.musicName}"></td>
+        <td th:text="${music.singerName}"></td>
+        <td th:text="${music.KindOfMusic}"></td>
+        <td th:text="${music.music}"></td>
+        <td><a th:href="${music.music}" th:text="${music.music}"></a> </td>
+        <td><a th:href="@{/music/{id}/edit(id=${music.id})}">Edit</a></td>
+        <td><a th:href="@{/music/{id}/delete(id=${music.id})}">Delete</a></td>
+        <td><a th:href="@{/music/{id}/view(id=${music.id})}">View</a></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
