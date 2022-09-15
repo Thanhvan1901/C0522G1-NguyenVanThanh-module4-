@@ -63,8 +63,8 @@ public class ProductController {
 
     @PostMapping("/search")
     public String search(@RequestParam String name , Model model){
-        model.addAttribute("productSearch" , producManagerService.search(name));
-        return "/search" ;
+        model.addAttribute("productList" , producManagerService.search(name));
+        return "/index" ;
     }
 
 }
