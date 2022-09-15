@@ -35,8 +35,8 @@ public class ProducManagerService implements IProducManagerService {
     }
 
     @Override
-    public void update(int id, Product produc) {
-        products.put(id,produc);
+    public void update(Product produc) {
+        products.put(produc.getId(),produc);
     }
 
     @Override

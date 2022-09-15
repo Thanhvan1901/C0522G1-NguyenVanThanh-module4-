@@ -44,7 +44,7 @@ public class ProductController {
 
     @PostMapping("/update")
     public String update(Product product){
-        producManagerService.update(product.getId(), product);
+        producManagerService.update( product);
         return "redirect:/product" ;
     }
 
