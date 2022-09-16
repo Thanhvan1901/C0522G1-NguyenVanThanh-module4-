@@ -9,7 +9,7 @@ public class Music {
     private int id ;
     private String musicName ;
     private String singerName ;
-    private String KindOfMusic ;
+    private String kindOfMusic ;
     private String music ;
 
     public Music() {
@@ -19,7 +19,7 @@ public class Music {
         this.id = id;
         this.musicName = musicName;
         this.singerName = singerName;
-        KindOfMusic = kindOfMusic;
+        kindOfMusic = kindOfMusic;
         this.music = music;
     }
 
@@ -48,11 +48,11 @@ public class Music {
     }
 
     public String getKindOfMusic() {
-        return KindOfMusic;
+        return kindOfMusic;
     }
 
     public void setKindOfMusic(String kindOfMusic) {
-        KindOfMusic = kindOfMusic;
+        kindOfMusic = kindOfMusic;
     }
 
     public String getMusic() {

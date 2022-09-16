@@ -12,7 +12,7 @@ import java.util.List;
 public class MusicRepository implements IMusicRepository {
     @Override
     public List<Music> findAll() {
-        org.hibernate.Session session = null;
+        Session session = null;
         List<Music> musicList = null;
         try {
             session = ConnectionUtil.sessionFactory.openSession();
@@ -27,8 +27,8 @@ public class MusicRepository implements IMusicRepository {
 
     @Override
     public void save(Music music) {
-        org.hibernate.Transaction transaction = null;
-        org.hibernate.Session session = null;
+        Transaction transaction = null;
+        Session session = null;
 
         try {
             session = ConnectionUtil.sessionFactory.openSession();
@@ -56,9 +56,8 @@ public class MusicRepository implements IMusicRepository {
 
     @Override
     public void update(Music music) {
-        org.hibernate.Transaction transaction = null;
-        org.hibernate.Session session = null;
-
+        Transaction transaction = null;
+        Session session = null;
         try {
             session = ConnectionUtil.sessionFactory.openSession();
             transaction = session.beginTransaction();
