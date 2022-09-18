@@ -5,27 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5737e8d4-176d-4364-a339-021c9d9b7913" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codegym/controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codegym/model/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codegym/repository/IProductManagerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codegym/service/IProducManagerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codegym/service/ProducManagerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/view.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog/src/main/java/codegym/controller/BlogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog/src/main/java/codegym/model/Blog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog/src/main/java/codegym/repposiroty/IBlogRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog/src/main/java/codegym/service/BlogService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog/src/main/java/codegym/service/IBlogService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog/src/main/resources/templates/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog/src/main/resources/templates/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog/src/main/resources/templates/layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog/src/main/resources/templates/view.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ss1/bai_tap/bai1/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss1/bai_tap/bai1/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ss1/bai_tap/bai1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss1/bai_tap/bai1/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ss1/bai_tap/bai1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss1/bai_tap/bai1/.idea/workspace.xml" afterDir="false" />
@@ -45,6 +24,9 @@
       <change beforePath="$PROJECT_DIR$/../../ss3/thuc_hanh/bai1/src/main/webapp/WEB-INF/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3/thuc_hanh/bai1/src/main/webapp/WEB-INF/views/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ss3/thuc_hanh/bai1/src/main/webapp/WEB-INF/views/view.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3/thuc_hanh/bai1/src/main/webapp/WEB-INF/views/view.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ss4/baitap/untitled/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss4/baitap/untitled/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/codegym/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codegym/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/codegym/repository/IProductManagerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codegym/repository/IProductManagerRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,6 +100,7 @@
       <option name="presentableId" value="Default" />
       <updated>1663299399727</updated>
       <workItem from="1663299402290" duration="5825000" />
+      <workItem from="1663519727438" duration="174000" />
     </task>
     <servers />
   </component>
@@ -134,5 +117,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

@@ -27,10 +27,9 @@ public class ProductController {
         model.addAttribute("product", new Product());
         return "/create";
     }
-//
+
     @PostMapping("/save")
     public String save(Product product){
-        product.setId((int) (Math.random() * 10000));
         producManagerService.save(product);
         return"redirect:/product";
     }
