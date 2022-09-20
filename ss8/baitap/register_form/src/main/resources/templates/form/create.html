@@ -1,41 +1,39 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head th:replace="~{/blog/layout::head}">
+<head th:replace="~{/form/layout::head}">
 <body>
-<h3>ADD NEW BLOG</h3>
+<h3>Sign Up Information</h3>
 <p>
 <a th:href="@{/}">
-    Back List Blog
+    Back List
 </a>
 </p>
 <div id="form">
-    <form th:action="@{/save}" th:object="${blog}"
+    <form th:action="@{/save}" th:object="${userDto}"
     method="post" novalidate="novalidate">
         <div>
-            <label>Blog Creator :</label>
-            <input type="text" th:field="*{blogCreator}"/>
+            <label>First Name</label>
+            <input type="text" th:field="*{firstName}"/>
+            <p style="color: red" th:errors="*{firstName}" th:if="${#fields.hasErrors('firstName')}"> </p>
         </div>
         <div>
-            <label>Blog Name :</label>
-            <input type="text" th:field="*{blogName}">
+            <label>Last Name :</label>
+            <input type="text" th:field="*{lastName}">
+            <p style="color: red" th:errors="*{lastName}" th:if="${#fields.hasErrors('lastName')}"> </p>
         </div>
         <div>
-            <label>Blog Creation Date :</label>
-            <input type="date" th:field="*{date}"/>
+            <label>Phone:</label>
+            <input type="text" th:field="*{phone}"/>
+            <p style="color: red" th:errors="*{phone}" th:if="${#fields.hasErrors('phone')}"> </p>
         </div>
         <div>
-            <label>Blog Content</label>
-            <input type="text" th:field="*{content}"/>
-        </div>
-        <div>
-            <label>Category: </label>
-            <select th:field="*{category}">
-                <option th:each="items: ${categoryList}" th:text="${items.nameCategory}" th:value="${items.id}"></option>
-            </select>
+            <label>Email : </label>
+            <input type="text" th:field="*{email}"/>
+            <p style="color: red" th:errors="*{email}" th:if="${#fields.hasErrors('email')}"> </p>
         </div>
         <input type="submit" value="Save"/>
     </form>
 </div>
-<footer th:replace="/blog/layout :: footer"></footer>
+<footer th:replace="/form/layout :: footer"></footer>
 </body>
 </html>
