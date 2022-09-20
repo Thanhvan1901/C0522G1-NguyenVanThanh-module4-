@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head th:replace="/layout :: head"></head>
+<head th:replace="~{/blog/layout::head}">
 <body>
 <h3>ADD NEW BLOG</h3>
 <p>
@@ -9,7 +9,7 @@
 </a>
 </p>
 <div id="form">
-    <form th:action="@{blog/save}" th:object="${blog}"
+    <form th:action="@{/save}" th:object="${blog}"
     method="post" novalidate="novalidate">
         <input type="hidden" th:field="*{id}"/>
         <div>
@@ -31,12 +31,12 @@
         <div>
             <label>Category: </label>
             <select th:field="*{category}">
-                <option th:each="category: ${categoryList}" th:text="${category.category}" th:value="${category.id}"></option>
+                <option th:each="items: ${categoryList}" th:text="${items.nameCategory}" th:value="${items.id}"></option>
             </select>
         </div>
         <input type="submit" value="Save"/>
     </form>
 </div>
-<footer th:replace="/layout :: footer"></footer>
+<footer th:replace="/blog/layout :: footer"></footer>
 </body>
 </html>

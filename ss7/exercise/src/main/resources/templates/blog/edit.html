@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head th:replace="/layout :: head">
+<head th:replace="~{/blog/layout::head}">
 <body>
 <h3>EDIT BLOG</h3>
 <p>
@@ -27,6 +27,9 @@
         <div>
             <label>Blog Content</label>
             <input type="text" th:field="*{content}">
+        </div>
+        <div>
+
         </div>
         <input type="submit" value="Save">
     </form>

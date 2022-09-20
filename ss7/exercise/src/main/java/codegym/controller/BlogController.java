@@ -1,8 +1,8 @@
 package codegym.controller;
 
 import codegym.model.Blog;
-import codegym.service.BlogService;
 import codegym.service.IBlogService;
+import codegym.service.ICategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -21,11 +21,12 @@ public class BlogController {
     @Autowired
     private IBlogService iblogService;
     @Autowired
-    private IBlogService icategoryService;
+    private ICategoryService icategoryService;
 
     @GetMapping("")
-    public String search(@RequestParam(value = "name",defaultValue = "") String name,@PageableDefault(value = 3) Pageable pageable, Model model) {
-        model.addAttribute("blogList", iblogService.findByName(name,pageable));
+    public String search(String name,@PageableDefault(value = 3) Pageable pageable, Model model) {
+
+        model.addAttribute("blogList", iblogService.findAllByBlogNameContaining(name,pageable));
         return "blog/index";
     }
 
@@ -40,7 +41,7 @@ public class BlogController {
     public String save(Blog blog, RedirectAttributes redirectAttributes) {
         iblogService.save(blog);
         redirectAttributes.addFlashAttribute("masseNew", "successfully added new !!");
-        return "redirect:/blogs";
+        return "redirect:/index";
     }
 
     @GetMapping("/edit/{id}")
@@ -58,7 +59,7 @@ public class BlogController {
 
     @GetMapping("/delete/{id}")
     public String delete(@PathVariable int id, Model model) {
-        model.addAttribute("blogs", iblogService.findById(id));
+        model.addAttribute("blog", iblogService.findById(id));
         return "blog/delete";
     }
 

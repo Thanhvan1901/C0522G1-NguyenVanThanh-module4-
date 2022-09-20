@@ -10,9 +10,10 @@ import org.springframework.data.repository.query.Param;
 import java.util.List;
 
 public interface IBlogRepository extends JpaRepository<Blog,Integer> {
-    @Query(value = "select * from blogs where name_blog like %:keyword%",nativeQuery = true)
-    Page<Blog> searchByName(@Param("keyword") String name, Pageable pageable);
-
-    @Query(value = "select  * from blogs order by date_created DESC ",nativeQuery = true)
-    Page<Blog> findAll(Pageable pageable);
+//    @Query(value = "select * from blog where blog_name like %:keyword%",nativeQuery = true)
+//    Page<Blog> searchByName(@Param("keyword") String name, Pageable pageable);
+//
+//    @Query(value = "select  * from blog order by date DESC ",nativeQuery = true)
+//    Page<Blog> findAll(Pageable pageable);
+    Page<Blog> findAllByBlogNameContaining(String name,Pageable pageable);
 }
