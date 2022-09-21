@@ -1,7 +1,7 @@
 package codegym.service;
 
 import codegym.model.Category;
-import codegym.reposiroty.ICategoryRepository;
+import codegym.repository.ICategoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

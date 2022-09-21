@@ -1,4 +1,4 @@
-package codegym.reposiroty;
+package codegym.repository;
 
 import codegym.model.Category;
 import org.springframework.data.jpa.repository.JpaRepository;
