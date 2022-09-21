@@ -9,18 +9,26 @@ import javax.validation.constraints.*;
 
 public class UserDto implements Validator {
 
-    private int id ;
+    private int id;
+
     @NotNull
     @NotBlank(message = "Can't Be Blank")
     @Size(min = 5 , max = 45 , message = "Minimum length of 5, Maximum 45 character")
-    private String lastName ;
+    private String lastName;
+
     @NotBlank(message = "Can't Be Blank")
-    @Size(min = 5 , max = 45 , message = "Minimum length of 5, Maximum 45 character")
-    private String firstName ;
+    @Size(min = 5 , max = 45, message = "Minimum length of 5, Maximum 45 character")
+    private String firstName;
+
+    @NotBlank(message = "Can't Be Blank")
+    @Min(18)
+    private String age ;
+
     @Pattern(regexp = "(^$|[0-9]{10})")
-    private String phone ;
+    private String phone;
+
     @Email
-    private String email ;
+    private String email;
 
     public UserDto() {
     }
@@ -47,6 +55,14 @@ public class UserDto implements Validator {
 
     public void setFirstName(String firstName) {
         this.firstName = firstName;
+    }
+
+    public String getAge() {
+        return age;
+    }
+
+    public void setAge(String age) {
+        this.age = age;
     }
 
     public String getPhone() {

@@ -6,22 +6,31 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
+
 public class User {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id ;
-    private String lastName ;
-    private String firstName ;
-    private String phone ;
-    private String email ;
+    private int id;
+
+    private String lastName;
+
+    private String firstName;
+
+    private String age;
+
+    private String phone;
+
+    private String email;
 
     public User() {
     }
 
-    public User(int id, String lastName, String firstName, String phone, String email) {
+    public User(int id, String lastName, String firstName, String age, String phone, String email) {
         this.id = id;
         this.lastName = lastName;
         this.firstName = firstName;
+        this.age = age;
         this.phone = phone;
         this.email = email;
     }
@@ -48,6 +57,14 @@ public class User {
 
     public void setFirstName(String firstName) {
         this.firstName = firstName;
+    }
+
+    public String getAge() {
+        return age;
+    }
+
+    public void setAge(String age) {
+        this.age = age;
     }
 
     public String getPhone() {

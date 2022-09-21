@@ -22,6 +22,11 @@
             <p style="color: red" th:errors="*{lastName}" th:if="${#fields.hasErrors('lastName')}"> </p>
         </div>
         <div>
+            <label>Age :</label>
+            <input type="text" th:field="*{age}">
+            <p style="color: red" th:errors="*{age}" th:if="${#fields.hasErrors('age')}"> </p>
+        </div>
+        <div>
             <label>Phone:</label>
             <input type="text" th:field="*{phone}"/>
             <p style="color: red" th:errors="*{phone}" th:if="${#fields.hasErrors('phone')}"> </p>
