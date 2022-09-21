@@ -1,5 +1,7 @@
 package codegym.service;
 
+import codegym.dto.BlogDto;
+import codegym.dto.IBlogDto;
 import codegym.model.Blog;
 import codegym.repposiroty.IBlogRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,8 +41,6 @@ public class BlogService implements IBlogService{
         iBlogRepository.delete(findById(id));
     }
 
-
-
     @Override
     public Page<Blog> findAll(Pageable pageable) {
         return iBlogRepository.findAll(pageable);
@@ -49,5 +49,10 @@ public class BlogService implements IBlogService{
     @Override
     public Page<Blog> findByName(String name,Pageable pageable) {
         return iBlogRepository.searchByName(name,pageable);
+    }
+
+    @Override
+    public List<IBlogDto> findBlogDtoByName() {
+        return iBlogRepository.findBlogDtoByName();
     }
 }

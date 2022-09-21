@@ -1,5 +1,7 @@
 package codegym.model;
 
+import codegym.dto.BlogDto;
+
 import javax.persistence.*;
 
 @Entity

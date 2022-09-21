@@ -1,5 +1,7 @@
 package codegym.controller;
 
+import codegym.dto.BlogDto;
+import codegym.dto.IBlogDto;
 import codegym.model.Blog;
 import codegym.service.IBlogService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +15,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import java.util.List;
+
 @Controller
 public class BlogController {
 
@@ -21,7 +25,7 @@ public class BlogController {
 
     @GetMapping("/")
     public ModelAndView showList (String name, @PageableDefault(value = 3) Pageable pageable, Model model){
-        return new ModelAndView("/index" ,"blogList", iBlogService.findByName());
+        return new ModelAndView("/index" ,"blogList", iBlogService.findByName(name,pageable));
     }
 
     @GetMapping("/create")
@@ -59,5 +63,11 @@ public class BlogController {
     public String view (@PathVariable int id , Model model){
         model.addAttribute("blogview" , iBlogService.findById(id));
         return "/view" ;
+    }
+
+    @GetMapping("/list")
+    public  String list( Model model){
+        model.addAttribute("blogs",iBlogService.findBlogDtoByName());
+        return "/list" ;
     }
 }

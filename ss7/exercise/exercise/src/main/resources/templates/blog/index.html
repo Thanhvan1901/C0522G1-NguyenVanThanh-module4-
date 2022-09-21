@@ -16,8 +16,10 @@
     </a>
 </p>
 <div>
-    <form action="/"><input type="text" th:placeholder="search" name="name" th:value="${names}">
-        <button type="submit">search</button></form>
+    <form action="/">
+        <input type="text" th:placeholder="search" name="name" th:value="${names}">
+        <button type="submit">search</button>
+    </form>
 
 </div>
 <h2 th:if="${blogList.isEmpty()}" style="color: red">
@@ -49,7 +51,7 @@
     </tbody>
 </table>
     <div>
-        <a th:href="@{'/'(page=${blogList.number - 1}, name=${names})}" th:if="${blogList.hasPrevious()}">Trước</a>
+        <a th:href="@{'/'(pagne=${blogList.number - 1}, name=${names})}" th:if="${blogList.hasPrevious()}">Trước</a>
         <span th:text="${blogList.number + 1}"></span>/<span th:text="${blogList.totalPages}"></span>
         <a th:href="@{'/'(page=${blogList.number + 1}, name=${names})}" th:if="${blogList.hasNext()}">Sau</a>
     </div>
