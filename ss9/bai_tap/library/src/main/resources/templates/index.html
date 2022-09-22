@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout :: head">
+</head>
+<body>
+<h3>Library Book</h3>
+<div class="notify">
+    <div th:if="${success}">
+        <span th:text="${success}"></span>
+    </div>
+</div>
+
+<table id="customers">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Book Title</th>
+        <th>Number of Books</th>
+        <th>Borrow Books</th>
+        <th>Give Book Back</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="book : ${bookList}">
+        <td th:text="${book.id}"></td>
+        <td th:text="${book.nameBook}"></td>
+        <td th:text="${book.amountBook}"></td>
+        <td><a th:href="@{{id}/borrow(id=${book.id})}">Borrow</a></td>
+        <td><a th:href="@{{id}/pay(id=${book.id})}">Give</a></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
