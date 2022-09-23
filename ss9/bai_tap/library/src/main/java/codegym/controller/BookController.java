@@ -33,7 +33,7 @@ public class BookController {
         }
 
     @PostMapping("/check")
-    public String checkBook(Book book , RedirectAttributes redirectAttributes){
+    public String checkBorrow(Book book , RedirectAttributes redirectAttributes){
             book.setAmountBook(book.getAmountBook() - 1);
             iBookService.save(book);
             redirectAttributes.addFlashAttribute("success" , "Borrowing books successfully");
@@ -51,48 +51,10 @@ public class BookController {
         }
     }
     @PostMapping("/savePay")
-    public String payBook(@ModelAttribute("book") Book book, RedirectAttributes redirectAttributes) throws Exception {
+    public String checkPay(@ModelAttribute("book") Book book, RedirectAttributes redirectAttributes) throws Exception {
         book.setAmountBook(book.getAmountBook() + 1);
         iBookService.save(book);
         redirectAttributes.addFlashAttribute("success" , "Successfully returned the book");
         return "redirect:/";
     }
-
-//    @GetMapping("/{id}/pay")
-//    public String showPay(@PathVariable int id, Model model) {
-//        model.addAttribute("book", iBookService.findById(id));
-//        return "/give";
-//    }
-//    @PostMapping("/savePay")
-//    public String payBook(@ModelAttribute("book") Book book, RedirectAttributes redirectAttributes) throws Exception {
-//
-//        if(book.getAmountBook() == book.getSumBook()){
-//            throw new Exception();
-//        }else {
-//            book.setAmountBook(book.getAmountBook() + 1);
-//            iBookService.save(book);
-//            redirectAttributes.addFlashAttribute("success", "Successfully returned the book!!");
-//            return "redirect:/";
-//        }
-//    }
-
-
-//    @GetMapping("/{id}/pay")
-//    public String showPay(@PathVariable int id, Model model) {
-//        model.addAttribute("book", iBookService.findById(id));
-//        return "/give";
-//    }
-//    @PostMapping("/savePay")
-//    public String payBook(@ModelAttribute("book") Book book, RedirectAttributes redirectAttributes) {
-//        if(book.getAmountBook() == book.getSumBook()){
-//            redirectAttributes.addFlashAttribute("success", "Book Is FULL");
-//            return "redirect:/";
-//        }else {
-//            book.setAmountBook(book.getAmountBook() +1);
-//            iBookService.save(book);
-//            redirectAttributes.addFlashAttribute("success", "Successfull!!");
-//            return "redirect:/";
-//        }
-//    }
-
 }

@@ -1,4 +1,4 @@
-package codegym.config;
+package codegym.exception;
 
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 @ControllerAdvice
 public class ExceptionHandle {
     @ExceptionHandler(Exception.class)
-    public String showErrorPage() {
+    public String ShowErrorPage(){
         return "/errorPage";
     }
 }

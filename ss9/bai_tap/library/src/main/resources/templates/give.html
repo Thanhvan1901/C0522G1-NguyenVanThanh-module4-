@@ -8,7 +8,7 @@
         Back to Library
     </a>
 </p>
-<form id="form" th:action="@{/savePay}" th:object="${book}" method="post">
+<form id="form" th:action="@{/savePay}" th:object="${books}" method="post">
 
     <input th:type="hidden" name="id" th:field="*{id}">
 

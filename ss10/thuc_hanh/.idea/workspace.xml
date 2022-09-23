@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ddc83340-a02d-40cf-beef-659142512e40" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/productsToCart/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/productsToCart/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/productsToCart/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/productsToCart/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/productsToCart/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/productsToCart/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/productsToCart/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss1/bai_tap/bai1/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss1/bai_tap/bai1/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss1/bai_tap/bai1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss1/bai_tap/bai1/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss1/bai_tap/bai1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss1/bai_tap/bai1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss2/bai_tap/bai1/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss2/bai_tap/bai1/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss2/bai_tap/bai1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss2/bai_tap/bai1/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss2/bai_tap/bai2/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss2/bai_tap/bai2/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss2/bai_tap/bai2/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss2/bai_tap/bai2/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss2/bai_tap/bai2/src/main/java/codegym/controller/CaculatorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss2/bai_tap/bai2/src/main/java/codegym/controller/CaculatorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss3/thuc_hanh/bai1/src/main/java/codegym/Model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3/thuc_hanh/bai1/src/main/java/codegym/Model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss3/thuc_hanh/bai1/src/main/java/codegym/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3/thuc_hanh/bai1/src/main/java/codegym/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss3/thuc_hanh/bai1/src/main/java/codegym/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3/thuc_hanh/bai1/src/main/java/codegym/service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss3/thuc_hanh/bai1/src/main/java/codegym/service/ICustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3/thuc_hanh/bai1/src/main/java/codegym/service/ICustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss3/thuc_hanh/bai1/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3/thuc_hanh/bai1/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss3/thuc_hanh/bai1/src/main/webapp/WEB-INF/views/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3/thuc_hanh/bai1/src/main/webapp/WEB-INF/views/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss3/thuc_hanh/bai1/src/main/webapp/WEB-INF/views/delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3/thuc_hanh/bai1/src/main/webapp/WEB-INF/views/delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss3/thuc_hanh/bai1/src/main/webapp/WEB-INF/views/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3/thuc_hanh/bai1/src/main/webapp/WEB-INF/views/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss3/thuc_hanh/bai1/src/main/webapp/WEB-INF/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3/thuc_hanh/bai1/src/main/webapp/WEB-INF/views/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss3/thuc_hanh/bai1/src/main/webapp/WEB-INF/views/view.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3/thuc_hanh/bai1/src/main/webapp/WEB-INF/views/view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss4/baitap/untitled/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss4/baitap/untitled/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss6/bai_tap/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss6/bai_tap/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss6/bai_tap/src/main/java/codegym/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss6/bai_tap/src/main/java/codegym/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss6/blog/src/main/resources/templates/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss6/blog/src/main/resources/templates/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss7/blog/src/main/java/codegym/repposiroty/IBlogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss7/blog/src/main/java/codegym/repposiroty/IBlogRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss8/thucHanh/src/main/java/codegym/configulation/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss8/thucHanh/src/main/java/codegym/configulation/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss8/thucHanh/src/main/java/codegym/configulation/AppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss8/thucHanh/src/main/java/codegym/configulation/AppInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss8/thucHanh/src/main/java/codegym/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss8/thucHanh/src/main/java/codegym/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss8/thucHanh/src/main/java/codegym/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss8/thucHanh/src/main/java/codegym/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss8/thucHanh/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss8/thucHanh/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss8/thucHanh/src/main/resources/templates/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss8/thucHanh/src/main/resources/templates/result.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="user" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectId" id="2F7zh5NoNxDZDigWhSkd29EsNdu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ss9/bai_tap/library" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RunManager">
+    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="user.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="codegym.UserApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ddc83340-a02d-40cf-beef-659142512e40" name="Changes" comment="" />
+      <created>1663858032336</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663858032336</updated>
+      <workItem from="1663858033545" duration="957000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
