@@ -42,6 +42,9 @@
                     <td th:text="${productMap.key.price}"></td>
                     <td th:text="${productMap.value}"></td>
                     <td th:text="${productMap.key.price * productMap.value}"></td>
+                    <td class="text-center">
+                        <a class="btn btn-warning" role="button" th:href="@{shop/delete/__${productMap.key.id}__}">-</a>
+                    </td>
                     <td>
                         <a th:href="@{/shop/delete/__${productMap.key.id}__}">
                             <button class="btn btn-danger">Delete</button>
