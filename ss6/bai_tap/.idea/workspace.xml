@@ -5,6 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5737e8d4-176d-4364-a339-021c9d9b7913" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../ss7/exercise/src/main/java/codegym/controller/BlogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7/exercise/src/main/java/codegym/model/Blog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7/exercise/src/main/java/codegym/model/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7/exercise/src/main/java/codegym/repposiroty/IBlogRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7/exercise/src/main/java/codegym/service/BlogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7/exercise/src/main/java/codegym/service/IBlogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7/exercise/src/main/resources/templates/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7/exercise/src/main/resources/templates/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7/exercise/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7/exercise/src/main/resources/templates/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7/exercise/src/main/resources/templates/view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7/practice/src/main/java/codegym/Service/IGeneralService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7/practice/src/main/java/codegym/Service/customer/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7/practice/src/main/java/codegym/Service/customer/ICustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7/practice/src/main/java/codegym/Service/province/IProvinceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7/practice/src/main/java/codegym/Service/province/ProvinceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7/practice/src/main/java/codegym/controller/customerContrller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7/practice/src/main/java/codegym/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7/practice/src/main/java/codegym/model/Province.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7/practice/src/main/java/codegym/reposiroty/ICustomerReposiroty.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7/practice/src/main/java/codegym/reposiroty/IProvinceReposiroty.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7/practice/src/main/resources/templates/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7/practice/src/main/resources/templates/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7/practice/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7/practice/src/main/resources/templates/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7/practice/src/main/resources/templates/view.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ss1/bai_tap/bai1/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss1/bai_tap/bai1/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ss1/bai_tap/bai1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss1/bai_tap/bai1/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ss1/bai_tap/bai1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss1/bai_tap/bai1/.idea/workspace.xml" afterDir="false" />
@@ -26,7 +52,11 @@
       <change beforePath="$PROJECT_DIR$/../../ss4/baitap/untitled/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss4/baitap/untitled/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/codegym/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codegym/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/codegym/repository/IProductManagerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codegym/repository/IProductManagerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codegym/model/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codegym/model/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codegym/model/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codegym/model/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/view.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codegym/model/view.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +100,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -80,6 +110,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\CODEGYM\Module4\C0522G1-NguyenVanThanh-module4-\ss6\bai_tap\src\main\resources\templates" />
       <recent name="D:\CODEGYM\Module4\C0522G1-NguyenVanThanh-module4-\ss6\bai_tap\src\main\java\codegym" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\CODEGYM\Module4\C0522G1-NguyenVanThanh-module4-\ss6\bai_tap\src\main\java\codegym\model" />
     </key>
   </component>
   <component name="RunManager">
@@ -101,6 +134,7 @@
       <updated>1663299399727</updated>
       <workItem from="1663299402290" duration="5825000" />
       <workItem from="1663519727438" duration="174000" />
+      <workItem from="1663559529876" duration="5317000" />
     </task>
     <servers />
   </component>

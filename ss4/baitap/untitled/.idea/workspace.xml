@@ -5,27 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be9ed673-bfbc-4961-b5b3-e7fa411a2f7e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../bai1/.idea/bai1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codegym/controller/MedicalDeclarationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codegym/model/MedicalDeclaration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codegym/repository/IMedicalDeclarationRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codegym/repository/impl/MedicalDeclarationRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codegym/service/IMedicalDeclarationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codegym/service/impl/MedicalDeclarationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/add.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/update.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../ss1/bai_tap/bai1/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1/bai_tap/bai1/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../ss1/bai_tap/bai1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1/bai_tap/bai1/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../ss1/bai_tap/bai1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1/bai_tap/bai1/.idea/workspace.xml" afterDir="false" />
@@ -34,8 +13,6 @@
       <change beforePath="$PROJECT_DIR$/../../../ss2/bai_tap/bai2/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss2/bai_tap/bai2/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../ss2/bai_tap/bai2/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss2/bai_tap/bai2/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../ss2/bai_tap/bai2/src/main/java/codegym/controller/CaculatorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss2/bai_tap/bai2/src/main/java/codegym/controller/CaculatorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bai1/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bai1/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bai1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bai1/.idea/vcs.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +165,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663078404385</updated>
-      <workItem from="1663078405854" duration="3246000" />
+      <workItem from="1663078405854" duration="3453000" />
     </task>
     <servers />
   </component>

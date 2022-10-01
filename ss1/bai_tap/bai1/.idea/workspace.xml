@@ -5,97 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa29cf39-77f9-4744-9d1d-90a25ff94453" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../../Bai_tap_them/src/Exam/Controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Bai_tap_them/src/Exam/Controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Bai_tap_them/src/Exam/Data/Data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Bai_tap_them/src/Exam/Data/Data.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Bai_tap_them/src/Exam/Model/Hocvien.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Bai_tap_them/src/Exam/Model/Hocvien.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Bai_tap_them/src/Exam/Model/NhanSu.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Bai_tap_them/src/Exam/Model/NhanSu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Bai_tap_them/src/Exam/Model/NhanVien.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Bai_tap_them/src/Exam/Model/NhanVien.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Bai_tap_them/src/Exam/Service/IService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Bai_tap_them/src/Exam/Service/IService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Bai_tap_them/src/Exam/Service/NhanSuImpl/NhanSuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Bai_tap_them/src/Exam/Service/NhanSuImpl/NhanSuServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Bai_tap_them/src/Exam/Until/CheckExam/CheckExam.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Bai_tap_them/src/Exam/Until/CheckExam/CheckExam.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Bai_tap_them/src/Exam/Until/CheckExam/ID.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Bai_tap_them/src/Exam/Until/CheckExam/ID.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Bai_tap_them/src/Exam/Until/ReadAndWrite/ReadAndWrite.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Bai_tap_them/src/Exam/Until/ReadAndWrite/ReadAndWrite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Bai_tap_them/src/Exam/Until/RegexExam/RegexExam.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Bai_tap_them/src/Exam/Until/RegexExam/RegexExam.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Bai_tap_them/src/Exam/View/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Bai_tap_them/src/Exam/View/View.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../thuc_hanh/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/bai2/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/bai2/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/bai2/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/bai2/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/bai2/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/bai2/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/bai2/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/bai2/src/main/webapp/WEB-INF/applicationContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/bai2/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/bai2/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/bai_2/src/main/java/abc/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../thuc_hanh/bai_2/src/main/java/abc/controller/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/bai_2/src/main/java/abc/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../thuc_hanh/bai_2/src/main/java/abc/model/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/bai_2/src/main/java/abc/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../thuc_hanh/bai_2/src/main/java/abc/service/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/bai_2/src/main/java/abc/service/CustomerServiceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../thuc_hanh/bai_2/src/main/java/abc/service/CustomerServiceFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/bai_2/src/main/java/abc/service/impl/SimpleCustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../thuc_hanh/bai_2/src/main/java/abc/service/impl/SimpleCustomerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/bai_2/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../thuc_hanh/bai_2/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/bai_2/src/main/webapp/WEB-INF/views/customer/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../thuc_hanh/bai_2/src/main/webapp/WEB-INF/views/customer/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/src/main/java/controller/GreetingController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/src/main/webapp/WEB-INF/applicationContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/DataFarama/Faciliti.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/DataFarama/customer_data.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/FuramaController/BookingMenu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/FuramaController/CustomerMenu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/FuramaController/EmployeeMenu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/FuramaController/FacilityMenu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/FuramaController/MenuFurama.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/FuramaController/PromotionMenu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/ModelFurama/Booking_Contact/Booking.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/ModelFurama/Faciliti/Furama_Dichvu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/ModelFurama/Faciliti/House.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/ModelFurama/Faciliti/Room.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/ModelFurama/Faciliti/Villa.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/ModelFurama/Person/Customer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/ModelFurama/Person/Employee1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/ModelFurama/Person/Person.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/ServiceFurama/IFaciliti.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/ServiceFurama/IPerson.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/ServiceFurama/IService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/ServiceFurama/Impl/CustomerServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/ServiceFurama/Impl/EmployeServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/ServiceFurama/Impl/FacilitiSerciveImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/ServiceFurama/Impl/HouseServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/ServiceFurama/Impl/RoomServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/ServiceFurama/Impl/VillaSerciveImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/UntilFarama/Check/CheckCustomer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/UntilFarama/Check/CheckException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/UntilFarama/Check/Regex.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/UntilFarama/Check/TangDan.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/UntilFarama/Check/UserException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/UntilFarama/Faciliti/Area.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/UntilFarama/Faciliti/AreaPool.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/UntilFarama/Faciliti/FreeService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/UntilFarama/Faciliti/NameSercive.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/UntilFarama/Faciliti/NumFrools.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/UntilFarama/Faciliti/NumPreson.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/UntilFarama/Faciliti/Price.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/UntilFarama/Faciliti/StandardRoom.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/UntilFarama/Faciliti/Type.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/UntilFarama/Information/AddressCustomer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/UntilFarama/Information/BirthDay.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/UntilFarama/Information/CodeCustomer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/UntilFarama/Information/CodeEmployee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/UntilFarama/Information/Email.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/UntilFarama/Information/Genner.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/UntilFarama/Information/LevelEmployee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/UntilFarama/Information/LocationEmployee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/UntilFarama/Information/Name.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/UntilFarama/Information/NumCMND.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/UntilFarama/Information/NumPhone.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/UntilFarama/Information/PriceEmployee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/UntilFarama/Information/TypeCustomer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/UntilFarama/WriteAndReadFile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../case_study/src/Furama/ViewFurama/View.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../de/src/de_1/ControllerMobile/MenuMobile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../demo_tomcat/src/main/java/ThucHanhServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../demo_tomcat/src/main/java/ThucHanhServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../module1" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/bai_tap/bai1/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss2/bai_tap/bai1/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/bai_tap/bai1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss2/bai_tap/bai1/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/bai_tap/bai2/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss2/bai_tap/bai2/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/bai_tap/bai2/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss2/bai_tap/bai2/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/bai_tap/bai2/src/main/java/codegym/controller/CaculatorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss2/bai_tap/bai2/src/main/java/codegym/controller/CaculatorController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +33,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -134,7 +51,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -246,6 +163,7 @@
       <option name="presentableId" value="Default" />
       <updated>1662711926717</updated>
       <workItem from="1662711928059" duration="4308000" />
+      <workItem from="1663054925280" duration="841000" />
     </task>
     <servers />
   </component>
@@ -262,5 +180,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

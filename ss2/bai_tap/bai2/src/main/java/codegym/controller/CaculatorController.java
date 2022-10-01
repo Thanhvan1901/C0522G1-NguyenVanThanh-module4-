@@ -10,7 +10,6 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class CaculatorController {
-
     @Autowired
     ICaculatorService iCaculatorService  ;
 

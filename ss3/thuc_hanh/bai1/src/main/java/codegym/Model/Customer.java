@@ -1,4 +1,4 @@
-package com.codegym.model;
+package codegym.Model;
 
 public class Customer {
     private int id;

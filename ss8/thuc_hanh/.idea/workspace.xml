@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="88388aac-0acb-4982-8046-85bbc55c0bd4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../ss7/blog/src/main/java/codegym/controller/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7/blog/src/main/java/codegym/model/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7/blog/src/main/java/codegym/repposiroty/ICategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7/blog/src/main/java/codegym/service/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7/blog/src/main/java/codegym/service/ICategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7/blog/src/main/resources/templates/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7/blog/src/main/resources/templates/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7/blog/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7/blog/src/main/resources/templates/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7/blog/src/main/resources/templates/view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss1/bai_tap/bai1/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss1/bai_tap/bai1/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss1/bai_tap/bai1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss1/bai_tap/bai1/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss1/bai_tap/bai1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss1/bai_tap/bai1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss2/bai_tap/bai1/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss2/bai_tap/bai1/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss2/bai_tap/bai1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss2/bai_tap/bai1/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss2/bai_tap/bai2/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss2/bai_tap/bai2/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss2/bai_tap/bai2/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss2/bai_tap/bai2/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss2/bai_tap/bai2/src/main/java/codegym/controller/CaculatorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss2/bai_tap/bai2/src/main/java/codegym/controller/CaculatorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss3/thuc_hanh/bai1/src/main/java/codegym/Model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3/thuc_hanh/bai1/src/main/java/codegym/Model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss3/thuc_hanh/bai1/src/main/java/codegym/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3/thuc_hanh/bai1/src/main/java/codegym/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss3/thuc_hanh/bai1/src/main/java/codegym/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3/thuc_hanh/bai1/src/main/java/codegym/service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss3/thuc_hanh/bai1/src/main/java/codegym/service/ICustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3/thuc_hanh/bai1/src/main/java/codegym/service/ICustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss3/thuc_hanh/bai1/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3/thuc_hanh/bai1/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss3/thuc_hanh/bai1/src/main/webapp/WEB-INF/views/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3/thuc_hanh/bai1/src/main/webapp/WEB-INF/views/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss3/thuc_hanh/bai1/src/main/webapp/WEB-INF/views/delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3/thuc_hanh/bai1/src/main/webapp/WEB-INF/views/delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss3/thuc_hanh/bai1/src/main/webapp/WEB-INF/views/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3/thuc_hanh/bai1/src/main/webapp/WEB-INF/views/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss3/thuc_hanh/bai1/src/main/webapp/WEB-INF/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3/thuc_hanh/bai1/src/main/webapp/WEB-INF/views/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss3/thuc_hanh/bai1/src/main/webapp/WEB-INF/views/view.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3/thuc_hanh/bai1/src/main/webapp/WEB-INF/views/view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss4/baitap/untitled/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss4/baitap/untitled/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss6/bai_tap/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss6/bai_tap/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss6/bai_tap/src/main/java/codegym/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss6/bai_tap/src/main/java/codegym/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss7/exercise/src/main/java/codegym/controller/BlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss7/exercise/src/main/java/codegym/controller/BlogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss7/exercise/src/main/java/codegym/model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss7/exercise/src/main/java/codegym/model/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss7/exercise/src/main/java/codegym/repposiroty/IBlogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss7/exercise/src/main/java/codegym/repposiroty/IBlogRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss7/exercise/src/main/resources/templates/blog/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss7/exercise/src/main/resources/templates/blog/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss7/exercise/src/main/resources/templates/blog/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss7/exercise/src/main/resources/templates/blog/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss7/exercise/src/main/resources/templates/blog/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss7/exercise/src/main/resources/templates/blog/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss7/exercise/src/main/resources/templates/blog/view.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss7/exercise/src/main/resources/templates/blog/view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss7/exercise/src/main/resources/templates/category/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss7/exercise/src/main/resources/templates/category/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss7/exercise/src/main/resources/templates/category/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss7/exercise/src/main/resources/templates/category/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss7/exercise/src/main/resources/templates/category/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss7/exercise/src/main/resources/templates/category/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2EztYbMtvCRiCq0YxLf3EghJovn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="88388aac-0acb-4982-8046-85bbc55c0bd4" name="Changes" comment="" />
+      <created>1663610288723</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663610288723</updated>
+      <workItem from="1663610289862" duration="120000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
