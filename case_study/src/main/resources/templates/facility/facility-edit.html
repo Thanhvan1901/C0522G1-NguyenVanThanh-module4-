@@ -7,8 +7,8 @@
 
 </head>
 <body>
-<nav th:replace="index :: header"></nav>
-<div th:replace="index :: menu"></div>
+<nav th:replace="home :: header"></nav>
+<div th:replace="home :: menu"></div>
 
 <div class="row mt-5">
     <div class="col-lg-3"></div>
@@ -157,7 +157,7 @@
     }
 </script>
 
-<div th:replace="index :: footer"></div>
-<link th:fragment="css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+<div th:replace="home :: footer"></div>
+<script th:replace="home :: js"></script>
 </body>
 </html>

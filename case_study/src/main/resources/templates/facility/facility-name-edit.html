@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link th:fragment="css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <style th:replace="index :: backgroud"></style>
+    <style th:replace="home :: backgroud"></style>
 </head>
 <body>
-<nav th:replace="index :: header"></nav>
-<div th:replace="index :: menu"></div>
+<nav th:replace="home :: header"></nav>
+<div th:replace="home :: menu"></div>
 
 <div class="container">
     <div class="row mt-5 mb-3">
@@ -41,8 +41,7 @@
     </div>
 </div>
 
-<div th:replace="index :: footer"></div>
-<link th:fragment="css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-
+<div th:replace="home :: footer"></div>
+<script th:replace="home :: js"></script>
 </body>
 </html>
