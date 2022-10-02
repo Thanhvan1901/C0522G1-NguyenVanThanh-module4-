@@ -2,9 +2,189 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+
 </head>
 <body>
-$END$
+
+<div>
+    Producer:
+    <input type="text" id="producer" placeholder="producer">
+
+    Model:
+    <input type="text" id="model" placeholder="model">
+
+    Price:
+    <input type="text" id="price" placeholder="price">
+
+    <input type="submit" value="Add" onclick="addNewSmartPhone()">
+</div>
+
+<h2> Smart Phone List</h2>
+<table class="table">
+    <tr style="background-color: forestgreen">
+        <th>#</th>
+        <th>Tên điện thoại</th>
+        <th>Giá tiền</th>
+        <th>Hãng sản xuất</th>
+        <th>Action</th>
+    </tr>
+    <tr>
+
+        <td></td>
+
+    </tr>
+</table>
+<br>
+<button id="next">More</button>
+<div>
+    <input type="hidden" id="id" value="">
+    Producer:
+    <input type="text" id="producerEdit" placeholder="producer" value=""><br>
+    Model:
+    <input type="text" id="modelEdit" placeholder="model" value="">
+    <br>
+    <td>Price:</td>
+    <td><input type="text" id="priceEdit" placeholder="price" value=""></td>
+    <br>
+    <button onclick="editSmartPhone()">Edit</button>
+</div>
+
+<script src="../../../../../jquery-3.6.1.js"></script>
+<script>
+    $(document).ready(function () {
+        $.ajax({
+            url: "http://localhost:8080/phone/api/v1",
+            type: "GET",
+            dataType: "json",
+            success: function (data) {
+                let str = [];
+                for (let i = 0; i < data.length; i++) {
+                    str.push("<tr>")
+                    str.push("<td>" + data[i].id + "</td>")
+                    str.push("<td>" + data[i].model + "</td>")
+                    str.push("<td>" + data[i].price + "</td>")
+                    str.push("<td>" + data[i].producer + "</td>")
+                    str.push(`<td><button data-bs-toggle="editModal" data-bs-target="#exampleModal" onclick="findById(` + data[i].id + `)">Edit</button></td>`)
+                    str.push("</tr>")
+                }
+                $("table").append((str.join("")));
+            }
+        })
+    })
+
+    function findById(id) {
+        $.ajax({
+            url: "http://localhost:8080/phone/api/v1/" + id,
+            type: "GET",
+            dataType: "json",
+            success: function (data) {
+                document.getElementById("id").value = (data.id);
+                document.getElementById("producerEdit").value = (data.producer);
+                document.getElementById("modelEdit").value = (data.model);
+                document.getElementById("priceEdit").value = (data.price);
+            }
+        })
+    }
+
+
+    function editSmartPhone() {
+        //lay du lieu
+        let id = $("#id").val();
+        let producer = $('#producerEdit').val();
+        let model = $('#modelEdit').val();
+        let price = $('#priceEdit').val();
+        let newSmartphone = {
+            id: id,
+            producer: producer,
+            model: model,
+            price: price
+        }
+
+        $(".table tbody").empty();
+        $.ajax({
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            type: "PUT",
+            data: JSON.stringify(newSmartphone),
+            //tên API
+            url: "http://localhost:8080/phone/api/v1/" + id,
+            success: function () {
+                $.ajax({
+                    url: "http://localhost:8080/phone/api/v1",
+                    type: "GET",
+                    dataType: "json",
+                    success: function (data) {
+                        let str = [];
+                        for (let i = 0; i < data.length; i++) {
+                            str.push("<tr>")
+                            str.push("<td>" + data[i].id + "</td>")
+                            str.push("<td>" + data[i].model + "</td>")
+                            str.push("<td>" + data[i].price + "</td>")
+                            str.push("<td>" + data[i].producer + "</td>")
+                            str.push(`<td><button data-bs-toggle="editModal" data-bs-target="#exampleModal" onclick="findById(` + data[i].id + `)">Edit</button></td>`)
+                            str.push("</tr>")
+                        }
+                        $("table").append((str.join("")));
+                    }
+                })
+            }
+
+        })
+
+    }
+
+    function addNewSmartPhone() {
+        debugger
+        //lay du lieu
+        let producer = $('#producer').val();
+        let model = $('#model').val();
+        let price = $('#price').val();
+        let newSmartphone = {
+            producer: producer,
+            model: model,
+            price: price
+        };
+        // goi ajax
+        $(".table tbody").empty();
+        $.ajax({
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            type: "POST",
+            data: JSON.stringify(newSmartphone),
+            //tên API
+            url: "http://localhost:8080/phone/api/v1",
+            //xử lý khi thành công
+            success: function () {
+                $.ajax({
+                    url: "http://localhost:8080/phone/api/v1",
+                    type: "GET",
+                    dataType: "json",
+                    success: function (data) {
+                        let str = [];
+                        for (let i = 0; i < data.length; i++) {
+                            str.push("<tr>")
+                            str.push("<td>" + data[i].id + "</td>")
+                            str.push("<td>" + data[i].model + "</td>")
+                            str.push("<td>" + data[i].price + "</td>")
+                            str.push("<td>" + data[i].producer + "</td>")
+                            str.push(`<td><button data-bs-toggle="editModal" data-bs-target="#exampleModal" onclick="findById(` + data[i].id + `)">Edit</button></td>`)
+                            str.push("</tr>")
+                        }
+                        $("table").append((str.join("")));
+                    }
+                })
+            }
+
+        });
+        //chặn sự kiện mặc định của thẻ
+        event.preventDefault();
+    }
+</script>
+
 </body>
 </html>
