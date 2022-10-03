@@ -20,6 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="690c8c90-4060-442c-96bf-097f34f0ef64" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../smartphone/phone.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../case_study/src/main/java/codegym/controller/FacilityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../case_study/src/main/java/codegym/controller/FacilityController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../case_study/src/main/java/codegym/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../case_study/src/main/java/codegym/controller/HomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../case_study/src/main/java/codegym/dto/facility/FacilityDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../case_study/src/main/java/codegym/dto/facility/FacilityDto.java" afterDir="false" />
@@ -81,7 +82,7 @@
       <option name="presentableId" value="Default" />
       <updated>1664423117226</updated>
       <workItem from="1664423118364" duration="690000" />
-      <workItem from="1664423920079" duration="14399000" />
+      <workItem from="1664423920079" duration="15130000" />
     </task>
     <servers />
   </component>
