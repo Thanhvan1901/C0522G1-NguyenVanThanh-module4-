@@ -1,10 +1,8 @@
 package codegym.controller;
 
+
 import codegym.dto.employee.EmployeeDto;
-import codegym.model.employee.Division;
-import codegym.model.employee.EducationDegree;
 import codegym.model.employee.Employee;
-import codegym.model.employee.Position;
 import codegym.service.IDivisionService;
 import codegym.service.IEducationDegreeService;
 import codegym.service.IEmployeeService;
@@ -43,8 +41,6 @@ public class EmployeeController {
                          Model model){
         String keyVal = keySearch.orElse("");
 
-        model.addAttribute("employeeAdd", new EmployeeDto());
-
         model.addAttribute("employees",
                 this.iEmployeeService.findAllByNameContaining(keyVal, pageable));
 
@@ -62,13 +58,26 @@ public class EmployeeController {
         return "employee/employee-list";
     }
 
+    @GetMapping("/create")
+    public String goCreateForm(Model model) {
+
+        model.addAttribute("employeeDto", new EmployeeDto());
+
+        model.addAttribute("division",
+                this.iDivisionService.findAll());
+        model.addAttribute("educationDegrees",
+                this.iEducationDegreeService.findAll());
+        model.addAttribute("position",
+                this.iPositionService.findAll());
+
+        return "employee/employee-create";
+    }
+
     @PostMapping("/save")
     public String saveEmployee(@ModelAttribute EmployeeDto employeeDto,
                                BindingResult bindingResult,
                                RedirectAttributes redirectAttributes,
                                Model model){
-
-        new EmployeeDto().validate(employeeDto, bindingResult);
 
         if (bindingResult.hasErrors()){
             model.addAttribute("educationDegrees",
@@ -85,23 +94,19 @@ public class EmployeeController {
         Employee employee = new Employee();
         BeanUtils.copyProperties(employeeDto, employee);
 
-        EducationDegree educationDegree = new EducationDegree();
-        educationDegree.setId(employeeDto.getEducationDegree().getId());
-        employee.setEducationDegree(educationDegree);
-
-        Position position = new Position();
-        position.setId(employeeDto.getPosition().getId());
-        employee.setPosition(position);
-
-        Division division = new Division();
-        division.setId(employeeDto.getDivision().getId());
-        employee.setDivision(division);
-
         this.iEmployeeService.save(employee);
 
         redirectAttributes.addFlashAttribute("message",
                 "successfully added new");
 
+        return "redirect:/employee/";
+    }
+
+
+
+    @PostMapping("/delete")
+    public String deleteEmployee(@RequestParam(value = "deleteId")int id){
+        this.iEmployeeService.deleteById(id);
         return "redirect:/employee/";
     }
 }

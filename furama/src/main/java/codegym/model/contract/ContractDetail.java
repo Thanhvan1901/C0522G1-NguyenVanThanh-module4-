@@ -10,6 +10,9 @@ public class ContractDetail {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id ;
 
+    @Column(name = "quantity")
+    private int quantity ;
+
     @ManyToOne
     @JoinColumn(name = "contract_id" , referencedColumnName = "id")
     private Contract contracts ;
@@ -21,8 +24,9 @@ public class ContractDetail {
     public ContractDetail() {
     }
 
-    public ContractDetail(int id, Contract contracts, AttachFacility attachFacility) {
+    public ContractDetail(int id, int quantity, Contract contracts, AttachFacility attachFacility) {
         this.id = id;
+        this.quantity = quantity;
         this.contracts = contracts;
         this.attachFacility = attachFacility;
     }
@@ -49,5 +53,13 @@ public class ContractDetail {
 
     public void setAttachFacility(AttachFacility attachFacility) {
         this.attachFacility = attachFacility;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
 }
