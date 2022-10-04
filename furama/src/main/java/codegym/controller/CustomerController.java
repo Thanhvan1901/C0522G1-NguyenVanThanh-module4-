@@ -70,10 +70,6 @@ public class CustomerController {
         Customer customer = new Customer();
         BeanUtils.copyProperties(customerDto, customer);
 
-        CustomerType customerType = new CustomerType();
-        customerType.setId(customerDto.getCustomerType().getId());
-        customer.setCustomerType(customerType);
-
         this.iCustomerService.save(customer);
 
         redirectAttributes.addFlashAttribute("message",
