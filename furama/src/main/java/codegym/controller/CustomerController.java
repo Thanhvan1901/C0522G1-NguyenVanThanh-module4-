@@ -104,7 +104,6 @@ public class CustomerController {
     public String deleteCustomer(@RequestParam (value = "deleteId")int id) {
 
         this.iCustomerService.deleteById(id);
-
         return "redirect:/customer/";
     }
 }

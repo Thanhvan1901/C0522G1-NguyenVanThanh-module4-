@@ -12,10 +12,10 @@ import java.util.List;
 public class RentTypeService implements IRentTypeService {
 
     @Autowired
-    private IRentTypeRepository iRentTypeRepository ;
+    private IRentTypeRepository iRentTypeRepository;
 
     @Override
     public List<RentType> findAll() {
-        return iRentTypeRepository.findAll();
+        return this.iRentTypeRepository.findAll();
     }
 }

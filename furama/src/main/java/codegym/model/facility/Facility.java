@@ -51,11 +51,13 @@ public class Facility {
     @OneToMany(mappedBy = "facility")
     private List<Contract> contracts ;
 
+    private int is_delete ;
+
 
     public Facility() {
     }
 
-    public Facility(int id, String name, String area, String cost, String maxPeople, String standard, String otherConvenience, String poolArea, String floors, String facilityFree, RentType rentType, FacilityType facilityType) {
+    public Facility(int id, String name, String area, String cost, String maxPeople, String standard, String otherConvenience, String poolArea, String floors, String facilityFree, RentType rentType, FacilityType facilityType, List<Contract> contracts, int is_delete) {
         this.id = id;
         this.name = name;
         this.area = area;
@@ -68,7 +70,8 @@ public class Facility {
         this.facilityFree = facilityFree;
         this.rentType = rentType;
         this.facilityType = facilityType;
-
+        this.contracts = contracts;
+        this.is_delete = is_delete;
     }
 
     public int getId() {
@@ -167,4 +170,19 @@ public class Facility {
         this.facilityType = facilityType;
     }
 
+    public List<Contract> getContracts() {
+        return contracts;
+    }
+
+    public void setContracts(List<Contract> contracts) {
+        this.contracts = contracts;
+    }
+
+    public int getIs_delete() {
+        return is_delete;
+    }
+
+    public void setIs_delete(int is_delete) {
+        this.is_delete = is_delete;
+    }
 }

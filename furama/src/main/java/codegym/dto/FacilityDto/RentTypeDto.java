@@ -1,28 +1,22 @@
 package codegym.dto.FacilityDto;
 
-import org.springframework.validation.Errors;
-import org.springframework.validation.Validator;
-
-import javax.persistence.*;
 import java.util.List;
 
-public class RentTypeDto implements Validator {
-
+public class RentTypeDto {
 
     private int id;
 
     private String name;
 
-
-
+    private List<FacilityDto> facilities;
 
     public RentTypeDto() {
     }
 
-    public RentTypeDto(int id, String name) {
+    public RentTypeDto(int id, String name, List<FacilityDto> facilities) {
         this.id = id;
         this.name = name;
-
+        this.facilities = facilities;
     }
 
     public int getId() {
@@ -41,15 +35,11 @@ public class RentTypeDto implements Validator {
         this.name = name;
     }
 
-
-    @Override
-    public boolean supports(Class<?> clazz) {
-        return false;
+    public List<FacilityDto> getFacilities() {
+        return facilities;
     }
 
-
-    @Override
-    public void validate(Object target, Errors errors) {
-
+    public void setFacilities(List<FacilityDto> facilities) {
+        this.facilities = facilities;
     }
 }

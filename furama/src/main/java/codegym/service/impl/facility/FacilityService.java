@@ -8,28 +8,37 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class FacilityService implements IFacilityService {
 
     @Autowired
-    private IFacilityRepository iFacilityRepository ;
+    private IFacilityRepository iFacilityRepository;
+
     @Override
-    public Page<Facility> findAllByNameContaining(String name, Pageable pageable) {
-        return iFacilityRepository.findAllByNameContaining(name, pageable);
+    public Page<Facility> findAllByNameContaining(String nameFacility, Pageable pageable) {
+        return this.iFacilityRepository.searchByName(nameFacility, pageable);
     }
 
     @Override
-    public void deleteById(int id) {
-        iFacilityRepository.deleteById(id);
+    public List<Facility> showFacilityList() {
+        return this.iFacilityRepository.findAll();
     }
 
     @Override
     public void save(Facility facility) {
-        iFacilityRepository.save(facility);
+        this.iFacilityRepository.save(facility);
     }
 
     @Override
     public Facility findById(int id) {
-        return iFacilityRepository.findAllById(id);
+        return this.iFacilityRepository.getById(id);
     }
+
+    @Override
+    public void deleteById(int id) {
+        this.iFacilityRepository.deleteId(id);
+    }
+
 }
