@@ -28,17 +28,14 @@ public class CustomerController {
 
 
     @GetMapping("/")
-    public String goCustomerList(@PageableDefault(size = 3) Pageable pageable,
-                                 @RequestParam Optional<String> keySearch,
+    public String goCustomerList(@PageableDefault(value = 3) Pageable pageable,
+                                 @RequestParam(value = "name"  , defaultValue = "") String name,
                                  Model model) {
 
-        String keyVal = keySearch.orElse("");
 
         model.addAttribute("customers",
-                this.iCustomerService.findAllByNameContaining(keyVal, pageable));
-
-        model.addAttribute("keySearch", keyVal);
-
+                this.iCustomerService.findAllByNameContaining(name, pageable));
+        model.addAttribute("name", name);
         return "customer/customer-list";
     }
 
@@ -104,9 +101,9 @@ public class CustomerController {
     }
 
     @PostMapping("/delete")
-    public String deleteCustomer(@RequestParam int customerId) {
+    public String deleteCustomer(@RequestParam (value = "deleteId")int id) {
 
-        this.iCustomerService.deleteById(customerId);
+        this.iCustomerService.deleteById(id);
 
         return "redirect:/customer/";
     }

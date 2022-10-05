@@ -27,4 +27,9 @@ public class FacilityService implements IFacilityService {
     public void save(Facility facility) {
         iFacilityRepository.save(facility);
     }
+
+    @Override
+    public Facility findById(int id) {
+        return iFacilityRepository.findAllById(id);
+    }
 }

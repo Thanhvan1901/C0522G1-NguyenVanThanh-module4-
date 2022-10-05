@@ -15,63 +15,72 @@
     <div style="background: #e9f2ef" class="col-lg-6 shadow-lg">
         <h1 class="text-center fst-italic">Create Facility Form</h1>
 
-        <form action="employee/save" method="post"   class="mt-5">
+        <form action="/facility/save" method="post" th:object="${facilityDto}" class="mt-5">
+            <div class="mb-3">
+                <label class="form-label fst-italic fw-bold ">Type Of Service:</label>
+                <select th:field="*{facilityType}" onchange="changeForm(this)" class="form-select">
+                    <option th:value="${''}">Chose Type..</option>
+                    <option th:each="facilityType : ${facilityTypeList}" th:value="${facilityType.id}" th:text="${facilityType.name}"></option>
+                </select>
+
+            </div>
 
             <div class="mb-3">
                 <label for="name" class="form-label fst-italic fw-bold ">Name Service:</label>
-                <span  id="nameError" class="form-text text-danger"></span>
-                <input  type="text" id="name" class="form-control" aria-describedby="nameError">
+                <input th:field="*{name}"  type="text" id="name" class="form-control">
             </div>
 
             <div class="mb-3">
                 <label for="area" class="form-label fst-italic fw-bold">Area:</label>
-                <span  id="areaError" class="form-text text-danger"></span>
-                <input  type="number" class="form-control" id="area" aria-describedby="areaError">
+                <span th:errors="*{area}" id="areaError" class="form-text text-danger"></span>
+                <input th:field="*{area}" type="number" class="form-control" id="area">
             </div>
 
             <div class="mb-3">
                 <label for="cost" class="form-label fst-italic fw-bold">Cost:</label>
-                <span  id="costError" class="form-text text-danger"></span>
-                <input  type="number" class="form-control" id="cost" aria-describedby="costError">
+                <span th:errors="*{cost}" id="costError" class="form-text text-danger"></span>
+                <input th:field="*{cost}" type="number" class="form-control" id="cost">
             </div>
 
             <div class="mb-3">
                 <label for="maxPeople" class="form-label fst-italic fw-bold">Max People:</label>
-                <span  id="maxPeopleError" class="form-text text-danger"></span>
-                <input type="number" class="form-control" id="maxPeople" aria-describedby="maxPeopleError">
+                <span th:errors="*{maxPeople}" id="maxPeopleError" class="form-text text-danger"></span>
+                <input th:field="*{maxPeople}" type="number" class="form-control" id="maxPeople">
             </div>
 
             <div class="mb-3">
                 <label for="rentType" class="form-label fst-italic fw-bold">Rent Type:</label>
-                <select  id="rentType" name="rentType" class="form-select" aria-label="Default select example">
+                <select th:field="*{rentType}" id="rentType" name="rentType" class="form-select">
+                    <option th:each="rentTypeObj : ${rentTypeList}"
+                            th:value="${rentTypeObj.id}"
+                            th:text="${rentTypeObj.name}">
+                    </option>
                 </select>
             </div>
 
             <div class="mb-3" id="opt1" style="display: none">
                 <label for="roomStandard" class="form-label fst-italic fw-bold">Room Standard:</label>
-                <select id="roomStandard" name="standard" class="form-select" aria-label="Default select example">
+                <select th:field="*{standard}" id="roomStandard" name="standard" class="form-select" aria-label="Default select example">
                     <option value="Normal">normal</option>
                     <option value="Vip">vip</option>
                 </select>
             </div>
             <div class="mb-3" id="opt2" style="display: none">
                 <label for="poolArea" class="form-label fst-italic fw-bold">Pool Area:</label>
-                <span  id="poolError" class="form-text text-danger"></span>
-                <input   type="number" value="0" name="Pool" class="form-control" id="poolArea" aria-describedby="poolError">
+                <input th:field="*{poolArea}"  type="number" value="0" name="Pool" class="form-control" id="poolArea" aria-describedby="poolError">
             </div>
             <div class="mb-3" id="opt3" style="display: none">
                 <label for="numberOfFloors" class="form-label fst-italic fw-bold">Number Of Floors:</label>
-                <span  id="floorError" class="form-text text-danger"></span>
-                <input   type="number" value="0" name="floors" class="form-control" id="numberOfFloors" aria-describedby="floorError">
+                <input  th:field="*{floors}" type="number" value="0" name="floors" class="form-control" id="numberOfFloors" aria-describedby="floorError">
             </div>
             <div class="mb-3" id="opt4" style="display: none">
                 <label for="descriptionOtherConvenience" class="form-label fst-italic fw-bold">Description Other Convenience:</label>
-                <input   type="text" name="convenience" class="form-control" id="descriptionOtherConvenience">
+                <input  th:field="*{otherConvenience}" type="text" name="convenience" class="form-control" id="descriptionOtherConvenience">
             </div>
 
             <div class="mb-3" id="opt5" style="display: none">
                 <label for="freeServiceIncluded" class="form-label fst-italic fw-bold">Free Service Included:</label>
-                <input   type="text" name="free" class="form-control" id="freeServiceIncluded">
+                <input  th:field="*{facilityFree}" type="text" name="free" class="form-control" id="freeServiceIncluded">
             </div>
             <div>
                 <button type="submit" class="btn btn-primary mb-3 w-100">Add</button>
@@ -82,6 +91,38 @@
     </div>
     <div class="col-lg-3"></div>
 </div>
+
+<script>
+    function changeForm(type) {
+        let choseType = type.value;
+        switch (choseType) {
+            case "1":
+                document.getElementById("opt1").style.display = "block";
+                document.getElementById("opt2").style.display = "block";
+                document.getElementById("opt3").style.display = "block";
+                document.getElementById("opt4").style.display = "block";
+                document.getElementById("opt5").style.display = "none";
+                document.getElementById("facilityTypeId").value = value
+                break;
+            case "2":
+                document.getElementById("opt1").style.display = "block";
+                document.getElementById("opt2").style.display = "none";
+                document.getElementById("opt3").style.display = "block";
+                document.getElementById("opt4").style.display = "block";
+                document.getElementById("opt5").style.display = "none";
+                document.getElementById("facilityTypeId").value = value
+                break;
+            case "3":
+                document.getElementById("opt1").style.display = "none";
+                document.getElementById("opt2").style.display = "none";
+                document.getElementById("opt3").style.display = "none";
+                document.getElementById("opt4").style.display = "none";
+                document.getElementById("opt5").style.display = "block";
+                document.getElementById("facilityTypeId").value = value
+                break;
+        }
+    }
+</script>
 
 <div th:replace="home :: footer"></div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

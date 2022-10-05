@@ -16,7 +16,7 @@ public class CustomerService implements ICustomerService {
 
     @Override
     public Page<Customer> findAllByNameContaining(String nameCustomer, Pageable pageable) {
-        return this.iCustomerRepository.findAllByNameContaining(nameCustomer, pageable);
+        return this.iCustomerRepository.searchByName(nameCustomer, pageable);
     }
     @Override
     public void save(Customer customer) {
@@ -30,6 +30,6 @@ public class CustomerService implements ICustomerService {
 
     @Override
     public void deleteById(int id) {
-        this.iCustomerRepository.deleteById(id);
+        this.iCustomerRepository.deleteId(id);
     }
 }

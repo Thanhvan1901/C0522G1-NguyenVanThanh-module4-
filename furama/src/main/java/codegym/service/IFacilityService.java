@@ -11,4 +11,6 @@ public interface IFacilityService {
     void deleteById(int id);
 
     void save(Facility facility);
+
+    Facility findById(int id);
 }
