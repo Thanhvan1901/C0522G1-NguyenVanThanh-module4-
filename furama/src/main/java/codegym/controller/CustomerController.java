@@ -14,6 +14,8 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+
+import javax.validation.Valid;
 import java.util.Optional;
 
 @Controller
@@ -51,7 +53,7 @@ public class CustomerController {
     }
 
     @PostMapping("/save")
-    public String saveCustomer(@ModelAttribute CustomerDto customerDto,
+    public String saveCustomer(@ModelAttribute @Valid CustomerDto customerDto,
                                BindingResult bindingResult,
                                RedirectAttributes redirectAttributes,
                                Model model) {
@@ -61,43 +63,58 @@ public class CustomerController {
         if (bindingResult.hasErrors()){
             model.addAttribute("customerTypeList",
                     this.iCustomerTypeService.findAll());
-            return "customer/customer-create";
+            return "/customer/customer-create";
+        }else {
+            Customer customer = new Customer();
+            BeanUtils.copyProperties(customerDto, customer);
+
+            this.iCustomerService.save(customer);
+
+            redirectAttributes.addFlashAttribute("message",
+                    "successfully added new");
+
+            return "redirect:/customer/";
         }
-
-        Customer customer = new Customer();
-        BeanUtils.copyProperties(customerDto, customer);
-
-        this.iCustomerService.save(customer);
-
-        redirectAttributes.addFlashAttribute("message",
-                "successfully added new");
-
-        return "redirect:/customer/";
     }
 
     @GetMapping("/edit")
     public String goEditForm(@RequestParam int id,
                              Model model) {
 
-        model.addAttribute("customer",
-                this.iCustomerService.findById(id));
+        Customer customer = iCustomerService.findById(id);
+
+        CustomerDto customerDto = new CustomerDto();
+
+        BeanUtils.copyProperties(customer,customerDto);
+
+        model.addAttribute("customerDto",
+                customerDto);
 
         model.addAttribute("customerTypeList",
                 this.iCustomerTypeService.findAll());
 
-        return "customer/customer-edit";
+        return "/customer/customer-edit";
     }
 
     @PostMapping("/update")
-    public String updateCustomer(@ModelAttribute Customer customer,
-                                 RedirectAttributes redirectAttributes) {
+    public String updateCustomer(@ModelAttribute @Valid CustomerDto customerDto,BindingResult bindingResult,
+                                 RedirectAttributes redirectAttributes , Model model) {
 
-        this.iCustomerService.save(customer);
+        new CustomerDto().validate(customerDto, bindingResult);
 
-        redirectAttributes.addFlashAttribute("message",
-                "successfully update");
+        if (bindingResult.hasErrors()){
+            return "/customer/customer-edit";
+        }else {
+            Customer customer = new Customer();
+            BeanUtils.copyProperties(customerDto, customer);
 
-        return "redirect:/customer/";
+            this.iCustomerService.save(customer);
+
+            redirectAttributes.addFlashAttribute("message",
+                    "successfully added new");
+
+            return "redirect:/customer/";
+        }
     }
 
     @PostMapping("/delete")

@@ -16,6 +16,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import javax.validation.Valid;
 import java.util.Optional;
 
 @Controller
@@ -59,30 +60,43 @@ public class FacilityController {
     }
 
     @PostMapping("/save")
-    public String saveFacility(@ModelAttribute  FacilityDto facilityDto,
+    public String saveFacility(@ModelAttribute @Valid FacilityDto facilityDto,
                                BindingResult bindingResult,
                                RedirectAttributes redirectAttributes,
-                               Model model){
+                               Model model) {
+        //  house
 
-        new FacilityDto().validate(facilityDto, bindingResult);
+        if(facilityDto.getFacilityType().getId() == 1){
+            new FacilityDto().validate(facilityDto, bindingResult);
+            if (bindingResult.hasFieldErrors()){
+                model.addAttribute("facilityTypeList",
+                        this.iFacilityTypeService.findAll());
 
-        if (bindingResult.hasErrors()){
-            model.addAttribute("facilityTypeList",
-                    this.iFacilityTypeService.findAll());
+                model.addAttribute("rentTypeList",
+                        this.iRentTypeService.findAll());
 
-            model.addAttribute("rentTypeList",
-                    this.iRentTypeService.findAll());
+                return "facility/facility-create";
+            }
 
-            return "facility/facility-create";
+        }if(facilityDto.getFacilityType().getId()== 2){
+            if (bindingResult.hasFieldErrors("standardRoom")
+                    || bindingResult.hasFieldErrors("poolArea")
+                    || bindingResult.hasFieldErrors("numberOfFloors")){
+                model.addAttribute("facilityTypeList",
+                        this.iFacilityTypeService.findAll());
+
+                model.addAttribute("rentTypeList",
+                        this.iRentTypeService.findAll());
+
+                return "facility/facility-create";
+            }
         }
-
         Facility facility = new Facility();
-        BeanUtils.copyProperties(facilityDto, facility);
-
+        BeanUtils.copyProperties(facilityDto,facility);
         this.iFacilityService.save(facility);
 
         redirectAttributes.addFlashAttribute("message",
-                "successfully added new");
+                "successfully update");
 
         return "redirect:/facility/";
     }
@@ -103,9 +117,24 @@ public class FacilityController {
     }
 
     @PostMapping("/update")
-    public String updateFacility(@ModelAttribute Facility facility, RedirectAttributes redirectAttributes){
+    public String updateFacility(@ModelAttribute Facility facility,BindingResult bindingResult,
+                                 RedirectAttributes redirectAttributes , Model model , FacilityDto facilityDto){
 
-        this.iFacilityService.save(facility);
+        new FacilityDto().validate(facilityDto , bindingResult);
+
+        if(bindingResult.hasFieldErrors()){
+            model.addAttribute("facilityTypeList",
+                    this.iFacilityTypeService.findAll());
+
+            model.addAttribute("rentTypeList",
+                    this.iRentTypeService.findAll());
+
+            return "facility/facility-edit";
+        }
+
+        Facility facility1 = new Facility();
+        BeanUtils.copyProperties(facilityDto,facility1);
+        this.iFacilityService.save(facility1);
 
         redirectAttributes.addFlashAttribute("message",
                 "successfully update");

@@ -7,26 +7,45 @@ import codegym.model.employee.Position;
 import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
 
+import javax.validation.constraints.*;
+
 public class EmployeeDto implements Validator {
 
+
+    @NotBlank(message = "Không Được Để Trống")
+    @Pattern(regexp = "([\\p{Lu}][\\p{Ll}]{1,8})(\\s([\\p{Lu}]|[\\p{Lu}][\\p{Ll}]{1,10})){0,5}$",
+            message = "Phải viết hoa chữ cái của mỗi từ!")
     private String name;
 
+    @Min(18)
     private String dateOfBirth;
 
+    @NotBlank(message = "Không Được Để Trống")
+    @Pattern(regexp = "^([0-9]{9}|[0-9]{12})$",
+            message = "Vui Lòng Nhập Lại")
     private String idCard;
 
+    @NotNull(message = "Không Được Để Trống")
     private String salary;
 
+    @NotBlank(message = "Không Được Để Trống")
+    @Pattern(regexp = "^(090|091|\\\\(84\\\\)\\\\+90|\\\\(84\\\\)\\\\+91)[0-9]{7}$",
+            message = "Vui Lòng Nhập Lại")
     private String phoneNumber;
 
+    @Email
     private String email;
 
+    @NotBlank(message = "Không Được Để Trống")
     private String address;
 
+    @NotNull(message = "Không Được Để Trống")
     private Position position;
 
+    @NotNull(message = "Không Được Để Trống")
     private EducationDegree educationDegree;
 
+    @NotNull(message = "Không Được Để Trống")
     private Division division;
 
     public EmployeeDto() {

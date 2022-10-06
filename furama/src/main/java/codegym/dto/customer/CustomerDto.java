@@ -1,40 +1,55 @@
 package codegym.dto.customer;
 
 import codegym.model.customer.CustomerType;
+import jdk.nashorn.internal.objects.annotations.Getter;
+import jdk.nashorn.internal.objects.annotations.Setter;
 import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
 
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
+
+
 public class CustomerDto implements Validator {
 
+    private int id ;
+
+    @NotBlank(message = "Không Được Để Trống")
+    @Pattern(regexp = "([\\p{Lu}][\\p{Ll}]{1,8})(\\s([\\p{Lu}]|[\\p{Lu}][\\p{Ll}]{1,10})){0,5}$",
+            message = "Phải viết hoa chữ cái của mỗi từ!")
     private String name;
 
+    @NotBlank(message = "Không Được Để Trống")
     private String dateOfBirth;
 
+    @NotBlank(message = "Không Được Để Trống")
     private String gender;
 
+    @NotBlank(message = "Không Được Để Trống")
+    @Pattern(regexp = "^([0-9]{9}|[0-9]{12})$",
+    message = "Vui Lòng Nhập Lại")
     private String idCard;
 
+    @NotBlank(message = "Không Được Để Trống")
+    @Pattern(regexp = "^(090|091|\\\\(84\\\\)\\\\+90|\\\\(84\\\\)\\\\+91)[0-9]{7}$",
+            message = "Vui Lòng Nhập Lại")
     private String phoneNumber;
 
+    @NotBlank(message = "Không Được Để Trống")
+    @Email
     private String email;
 
+    @NotBlank(message = "Không Được Để Trống")
     private String address;
 
+    @NotNull(message = "Không Được Để Trống")
     private CustomerType customerType;
 
     public CustomerDto() {
     }
 
-    public CustomerDto(String name, String dateOfBirth, String gender, String idCard, String phoneNumber, String email, String address, CustomerType customerType) {
-        this.name = name;
-        this.dateOfBirth = dateOfBirth;
-        this.gender = gender;
-        this.idCard = idCard;
-        this.phoneNumber = phoneNumber;
-        this.email = email;
-        this.address = address;
-        this.customerType = customerType;
-    }
 
     public String getName() {
         return name;
@@ -98,6 +113,14 @@ public class CustomerDto implements Validator {
 
     public void setCustomerType(CustomerType customerType) {
         this.customerType = customerType;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     @Override

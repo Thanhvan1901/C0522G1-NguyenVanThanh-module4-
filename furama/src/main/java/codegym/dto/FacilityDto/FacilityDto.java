@@ -2,8 +2,15 @@ package codegym.dto.FacilityDto;
 
 
 import codegym.model.contract.Contract;
+import codegym.model.facility.FacilityType;
+import codegym.model.facility.RentType;
 import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
+
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 import java.util.List;
 
 
@@ -12,59 +19,63 @@ public class FacilityDto implements Validator {
 
     private int id;
 
+    @NotBlank(message = "Không Được Để Trống")
+    @Pattern(regexp = "([\\p{Lu}][\\p{Ll}]{1,8})(\\s([\\p{Lu}]|[\\p{Lu}][\\p{Ll}]{1,10})){0,5}$",
+            message = "Phải viết hoa chữ cái của mỗi từ!")
     private String name;
 
-
+    @NotBlank(message = "Không Được Để Trống")
     private String area;
 
-
+    @NotBlank(message = "Không Được Để Trống")
     private String cost;
 
-
+    @NotBlank(message = "Không Được Để Trống")
     private String maxPeople;
 
+    @Min(1)
+    @NotBlank
+    private String standardRoom;
 
-    private String standard;
+    @Min(1)
+    @NotBlank
+    private String descriptionOtherConvenience;
 
-
-    private String otherConvenience;
-
-
+    @Min(1)
+    @NotBlank
     private String poolArea;
 
-
-    private String floors;
-
+    @Min(1)
+    @NotBlank
+    private String numberOfFloors;
 
     private String facilityFree;
 
+    private FacilityType facilityType;
 
-    private RentTypeDto rentType;
-
-
-    private FacilityTypeDto facilityType;
+    private RentType rentType;
 
 
     private List<Contract> contracts ;
 
-
     public FacilityDto() {
     }
 
-    public FacilityDto(int id, String name, String area, String cost, String maxPeople, String standard, String otherConvenience, String poolArea, String floors, String facilityFree, RentTypeDto rentType, FacilityTypeDto facilityType) {
+
+    public FacilityDto(int id, String name, String area, String cost, String maxPeople, String standardRoom, String descriptionOtherConvenience, String poolArea, String numberOfFloors, String facilityFree, FacilityType facilityType, RentType rentType, List<Contract> contracts) {
         this.id = id;
         this.name = name;
         this.area = area;
         this.cost = cost;
         this.maxPeople = maxPeople;
-        this.standard = standard;
-        this.otherConvenience = otherConvenience;
+        this.standardRoom = standardRoom;
+        this.descriptionOtherConvenience = descriptionOtherConvenience;
         this.poolArea = poolArea;
-        this.floors = floors;
+        this.numberOfFloors = numberOfFloors;
         this.facilityFree = facilityFree;
-        this.rentType = rentType;
         this.facilityType = facilityType;
-
+        this.rentType = rentType;
+        this.contracts = contracts;
     }
 
     public int getId() {
@@ -107,20 +118,20 @@ public class FacilityDto implements Validator {
         this.maxPeople = maxPeople;
     }
 
-    public String getStandard() {
-        return standard;
+    public String getStandardRoom() {
+        return standardRoom;
     }
 
-    public void setStandard(String standard) {
-        this.standard = standard;
+    public void setStandardRoom(String standardRoom) {
+        this.standardRoom = standardRoom;
     }
 
-    public String getOtherConvenience() {
-        return otherConvenience;
+    public String getDescriptionOtherConvenience() {
+        return descriptionOtherConvenience;
     }
 
-    public void setOtherConvenience(String otherConvenience) {
-        this.otherConvenience = otherConvenience;
+    public void setDescriptionOtherConvenience(String descriptionOtherConvenience) {
+        this.descriptionOtherConvenience = descriptionOtherConvenience;
     }
 
     public String getPoolArea() {
@@ -131,12 +142,36 @@ public class FacilityDto implements Validator {
         this.poolArea = poolArea;
     }
 
-    public String getFloors() {
-        return floors;
+    public String getNumberOfFloors() {
+        return numberOfFloors;
     }
 
-    public void setFloors(String floors) {
-        this.floors = floors;
+    public void setNumberOfFloors(String numberOfFloors) {
+        this.numberOfFloors = numberOfFloors;
+    }
+
+    public FacilityType getFacilityType() {
+        return facilityType;
+    }
+
+    public void setFacilityType(FacilityType facilityType) {
+        this.facilityType = facilityType;
+    }
+
+    public RentType getRentType() {
+        return rentType;
+    }
+
+    public void setRentType(RentType rentType) {
+        this.rentType = rentType;
+    }
+
+    public List<Contract> getContracts() {
+        return contracts;
+    }
+
+    public void setContracts(List<Contract> contracts) {
+        this.contracts = contracts;
     }
 
     public String getFacilityFree() {
@@ -145,22 +180,6 @@ public class FacilityDto implements Validator {
 
     public void setFacilityFree(String facilityFree) {
         this.facilityFree = facilityFree;
-    }
-
-    public RentTypeDto getRentType() {
-        return rentType;
-    }
-
-    public void setRentType(RentTypeDto rentType) {
-        this.rentType = rentType;
-    }
-
-    public FacilityTypeDto getFacilityType() {
-        return facilityType;
-    }
-
-    public void setFacilityType(FacilityTypeDto facilityType) {
-        this.facilityType = facilityType;
     }
 
     @Override

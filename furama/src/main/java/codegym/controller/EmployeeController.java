@@ -78,7 +78,7 @@ public class EmployeeController {
                                BindingResult bindingResult,
                                RedirectAttributes redirectAttributes,
                                Model model){
-
+        new EmployeeDto().validate(employeeDto , bindingResult);
         if (bindingResult.hasErrors()){
             model.addAttribute("educationDegrees",
                     this.iEducationDegreeService.findAll());
@@ -88,7 +88,7 @@ public class EmployeeController {
 
             model.addAttribute("divisions",
                     this.iDivisionService.findAll());
-            return "employee/employee-list";
+            return "employee/employee-edit";
         }
 
         Employee employee = new Employee();
