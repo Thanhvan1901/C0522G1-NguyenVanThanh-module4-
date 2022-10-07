@@ -38,7 +38,7 @@ public class CustomerDto implements Validator {
     private String phoneNumber;
 
     @NotBlank(message = "Không Được Để Trống")
-    @Email
+    @Email(message = "Mời Nhập Đúng Định Dạng")
     private String email;
 
     @NotBlank(message = "Không Được Để Trống")

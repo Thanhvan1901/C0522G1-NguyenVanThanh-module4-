@@ -33,20 +33,16 @@ public class FacilityDto implements Validator {
     @NotBlank(message = "Không Được Để Trống")
     private String maxPeople;
 
-    @Min(1)
-    @NotBlank
+    @NotBlank(message = "Không Được Để Trống")
     private String standardRoom;
 
-    @Min(1)
-    @NotBlank
+    @NotBlank(message = "Không Được Để Trống")
     private String descriptionOtherConvenience;
 
-    @Min(1)
-    @NotBlank
+    @NotBlank(message = "Không Được Để Trống")
     private String poolArea;
 
-    @Min(1)
-    @NotBlank
+    @NotBlank(message = "Không Được Để Trống")
     private String numberOfFloors;
 
     private String facilityFree;

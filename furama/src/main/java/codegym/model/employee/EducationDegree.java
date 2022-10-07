@@ -19,6 +19,12 @@ public class EducationDegree {
     public EducationDegree() {
     }
 
+    public EducationDegree(int id, String name, List<Employee> employees) {
+        this.id = id;
+        this.name = name;
+        this.employees = employees;
+    }
+
     public int getId() {
         return id;
     }

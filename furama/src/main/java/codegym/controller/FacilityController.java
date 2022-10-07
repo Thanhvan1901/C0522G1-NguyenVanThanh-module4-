@@ -17,7 +17,6 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.validation.Valid;
-import java.util.Optional;
 
 @Controller
 @RequestMapping("/facility")
@@ -64,8 +63,7 @@ public class FacilityController {
                                BindingResult bindingResult,
                                RedirectAttributes redirectAttributes,
                                Model model) {
-        //  house
-
+        //  villa
         if(facilityDto.getFacilityType().getId() == 1){
             new FacilityDto().validate(facilityDto, bindingResult);
             if (bindingResult.hasFieldErrors()){
@@ -77,11 +75,33 @@ public class FacilityController {
 
                 return "facility/facility-create";
             }
+//            House
+        } else if(facilityDto.getFacilityType().getId()== 2){
+            if (bindingResult.hasFieldErrors("facilityType")
+                    ||bindingResult.hasFieldErrors("name")
+                    || bindingResult.hasFieldErrors("area")
+                    || bindingResult.hasFieldErrors("cost")
+                    || bindingResult.hasFieldErrors("maxPeople")
+                    || bindingResult.hasFieldErrors("rentType")){
+                model.addAttribute("facilityTypeList",
+                        this.iFacilityTypeService.findAll());
 
-        }if(facilityDto.getFacilityType().getId()== 2){
-            if (bindingResult.hasFieldErrors("standardRoom")
+                model.addAttribute("rentTypeList",
+                        this.iRentTypeService.findAll());
+
+                return "facility/facility-create";
+            }
+        } else if(facilityDto.getFacilityType().getId()== 3){
+            new FacilityDto().validate(facilityDto, bindingResult);
+            if (bindingResult.hasFieldErrors("facilityType")
+                    ||bindingResult.hasFieldErrors("name")
+                    || bindingResult.hasFieldErrors("area")
+                    || bindingResult.hasFieldErrors("cost")
+                    || bindingResult.hasFieldErrors("maxPeople")
+                    || bindingResult.hasFieldErrors("descriptionOtherConvenience")
+                    || bindingResult.hasFieldErrors("rentType")
                     || bindingResult.hasFieldErrors("poolArea")
-                    || bindingResult.hasFieldErrors("numberOfFloors")){
+                    || bindingResult.hasFieldErrors("standardRoom")){
                 model.addAttribute("facilityTypeList",
                         this.iFacilityTypeService.findAll());
 
